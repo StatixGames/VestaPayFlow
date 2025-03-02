@@ -1,0 +1,29 @@
+1. Web Scraping:
+
+    Tool: Use Python with libraries like BeautifulSoup, Selenium, or Playwright for scraping dynamic content.
+    Automation: Set up a scheduled scraper with cron jobs or AWS Lambda functions to run periodically.
+
+2. Data Storage:
+
+    SQL Database: Use Amazon RDS (for a managed SQL database) or Amazon DynamoDB (for NoSQL, if needed).
+    Google Sheets Integration: Use the Google Sheets API if you want to keep a live spreadsheet for easy access.
+    Alternative: You could use Amazon S3 with Athena to store and query CSV data if spreadsheets are the goal.
+
+3. AWS Services:
+
+    Lambda: Automate the scraping and data processing.
+    EC2 or Fargate: Host the scraper if it requires a persistent or complex environment.
+    RDS/DynamoDB: Store data in a scalable database.
+    S3 & Athena: As an alternative to Google Sheets, this combo allows for scalable data storage and querying.
+    EventBridge: Schedule scraping and data updates.
+    API Gateway: If you want to create an API for this data.
+
+4. Regular Updates:
+
+    Scheduling: Use AWS EventBridge to trigger the scraping at set intervals.
+    Notifications: Set up AWS SNS to notify you of new data or errors.
+
+5. Data Visualization:
+
+    Google Sheets: For quick viewing and sharing.
+    AWS QuickSight: If you need advanced dashboards and analytics.
